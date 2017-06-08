@@ -1,0 +1,65 @@
+.card__info
+    .time
+        p.time__text До конца распродажи
+        p.time__view 3 дня, 15:37:01
+    h1.product-name Current Elliott
+    h2.product-name__second Costa Patch Pocket Denim Top
+    .product-price
+        span.product-price__old 30 000 грн
+        span.product-price__new 15 000 грн
+        .discount -50%
+    .filter
+        .filter__title Цвет: <span class="filter__name">Синий</span>
+        .filter-color
+            ul.filter-block__list
+                li.filter-block__item.filter-color__item--grey
+                li.filter-block__item.filter-color__item--blue.active-block
+                li.filter-block__item.filter-color__item--orange
+                li.filter-block__item.filter-color__item--red
+                li.filter-block__item.filter-color__item--green
+    .filter
+        .filter__title Размер:
+        .filter-size
+            ul.filter-block__list
+                li.filter-block__item.filter-size__item xs
+                li.filter-block__item.filter-size__item.active-block s
+                li.filter-block__item.filter-size__item m
+                li.filter-block__item.filter-size__item.block l
+                li.filter-block__item.filter-size__item.block xl
+            a(href="#").filter-size__link Примерить онлайн
+    .filter
+        .filter__title Количество:
+        form(action="#" method="post").filter-number
+            .filter-number__block
+                button.filter-number__button -
+                input(type="text" name="text" placeholder="1").filter-number__input
+                button.filter-number__button +
+            .filter-number__send
+                button(type="submit").filter-number__submit.filter-number__add в избранное
+                button(type="submit").filter-number__submit.filter-number__basket добавить в корзину
+    .filter
+        .order
+            p.order__title Оформить заказ по телефону
+            a(href="tell:+38095458984").order__number +38 095 458-98-4
+            span.order__text или
+            a(href="tell:+380443590899").order__number +38 044 359-08-99
+            a(href="#").order__search Наличие в бутиках One Club
+    .filter
+        .info-product
+            .view
+                h3.title Описание и детали
+                h3.stock -
+            .filter__title Состав: <span class="filter__name">100% трикотаж</span>
+            .filter__title Сезон: <span class="filter__name">демисезон</span>
+            .filter__title Детали: <span class="filter__name">Облегающая модель выполнена из гладкого трико-
+                | тажа.</span>
+            .filter__title Код товара: <span class="filter__name product-code">1234-5678-8765-4321</span>
+    .filter
+        .view
+            h3.title Измерения
+            h3.stock +
+    .filter
+        .view
+            h3.title Доставка и возврат
+            h3.stock +
+    include ../common/_share

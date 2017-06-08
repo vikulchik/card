@@ -1,0 +1,319 @@
+.time {
+  width: 175px;
+  background: #e6e6e6;
+  padding: 10px 10px 10px 42px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+  &:after {
+    position: absolute;
+    content: '';
+    width: 28px;
+    height: 28px;
+    background: url("/assets/img/big-clock.png") no-repeat 0 0;
+    top: 11px;
+    left: 7px;
+    
+  }
+}
+
+.time__text {
+  font-size: 12px;
+  color: #444444;
+  margin: 0 0 4px 0;
+}
+
+.time__view {
+  font-size: 14px;
+  margin: 0;
+  color: #f68235;
+}
+
+.product-name {
+  color: #f68235;
+  font-size: 25px;
+  margin: 0;
+}
+
+.product-name__second {
+  font-size: 18px;
+  margin: 0 0 15px 0;
+}
+
+.product-price {
+  font-size: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #dedede;
+  position: relative;
+}
+
+.product-price__old {
+  color: #999999;
+  text-decoration: line-through;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.product-price__new {
+  color: #f68235;
+  display: inline-block;
+}
+
+.discount {
+  position: absolute;
+  right: 0;
+  bottom: 16px;
+  font-size: 17px;
+  width: 45px;
+  height: 45px;
+  background: #828282;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 13px;
+}
+
+.filter {
+  padding: 15px 0;
+  border-bottom: 1px solid #dedede;
+}
+
+.filter__title {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.filter-block__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.filter-block__item {
+  list-style-type: none;
+  width: 35px;
+  height: 35px;
+  margin-right: 15px;
+  box-sizing: border-box;
+  
+  &:last-child {
+    margin-right: 0;
+  }
+  
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.filter-color__item--grey {
+  background: #636363;
+}
+
+.filter-color__item--blue {
+  background: #0a0c44;
+}
+
+.filter-color__item--orange {
+  background: #ffc66d;
+}
+
+.filter-color__item--red {
+  background: #b30016;
+}
+
+.filter-color__item--green {
+  background: #abc850;
+}
+
+.filter-size__item {
+  border: 1px solid #cccccc;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.block {
+  background: #dedede;
+  color: #6d6d6d;
+  
+  &:hover {
+    cursor: auto;
+  }
+}
+
+.filter-size__link {
+  font-size: 14px;
+  color: #999999;
+  text-decoration: underline;
+  margin-top: 20px;
+  position: relative;
+  
+  &:after {
+    position: absolute;
+    content: '';
+    width: 21px;
+    height: 21px;
+    top: -3px;
+    background: url(/assets/img/cloth.png) no-repeat 0 0;
+    left: 139px;
+  }
+}
+
+.filter__name {
+  font-weight: normal;
+}
+
+.filter-number__block {
+  font-size: 0;
+  margin-bottom: 20px;
+}
+
+.filter-number__button {
+  width: 20px;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 15px 0;
+  text-align: center;
+  background: white;
+  border: none;
+  display: inline-block;
+}
+
+.filter-number__input {
+  width: 75px;
+  border: 1px solid #dedede;
+  font-size: 17px;
+  font-weight: bold;
+  padding: 15px 0;
+  text-align: center;
+  display: inline-block;
+}
+
+.filter-number__submit {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 10px 30px 10px 50px;
+  position: relative;
+  
+  &:hover {
+    cursor: pointer;
+  }
+  
+  &:after {
+    position: absolute;
+    content: '';
+  }
+}
+
+.filter-number__add {
+  border: 1px solid #dedede;
+  background: white;
+  margin-right: 20px;
+  
+  &:after {
+    background: url(/assets/img/like.png) no-repeat 0 0;
+    width: 14px;
+    height: 13px;
+    top: 10px;
+    left: 20px;
+  }
+}
+
+.filter-number__basket {
+  color: white;
+  background: #f68235;
+  border: none;
+  
+  &:after {
+    background: url(/assets/img/bag.png) no-repeat 0 0;
+    width: 15px;
+    height: 19px;
+    top: 6px;
+    left: 20px;
+  }
+}
+
+.order__title, .order__search {
+  font-size: 14px;
+  color: black;
+  padding-left: 30px;
+  position: relative;
+  
+  &:after {
+    position: absolute;
+    content: '';
+    left: 0;
+  }
+}
+
+.order__search {
+  text-decoration: underline;
+  margin-top: 22px;
+  
+  &:after {
+    top: -5px;
+    width: 20px;
+    height: 26px;
+    background: url(/assets/img/search.png) no-repeat 0 0;
+  }
+}
+
+.order__title {
+  
+  &:after {
+    background: url(/assets/img/tellto.png) no-repeat 0 0;
+    width: 20px;
+    height: 22px;
+    top: -3px;
+  }
+}
+
+.order__number, .order__text {
+  display: inline-block;
+  color: #999999;
+  font-size: 14px;
+}
+
+.order__number {
+  text-decoration: underline;
+}
+
+.order__text {
+  margin: 0 15px;
+}
+
+.info-product {
+  
+  .filter__title {
+    margin-bottom: 5px;
+    
+    &:nth-child(4) {
+      margin-bottom: 22px;
+    }
+  }
+}
+
+.title {
+  font-size: 25px;
+  margin: 0 0 25px 0;
+  display: inline-block;
+}
+
+.product-code {
+  color: #999999;
+}
+
+.stock {
+  display: inline-block;
+  font-size: 25px;
+  margin: 0;
+}
+
+.view {
+  display: flex;
+  justify-content: space-between;
+}

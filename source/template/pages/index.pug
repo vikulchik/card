@@ -1,0 +1,12 @@
+extends ../_template
+
+block variables
+  - var title = 'Home page'
+
+block content
+  include ../common/_header
+  main
+    .card
+        .container
+            include ../common/_card-item
+            include ../common/_card-info

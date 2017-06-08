@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+
+  &:hover {
+    color: #f68235;
+    transition: 0.3s;
+  }
+}
+
+.active-block {
+  border: 2px solid #f68235;
+}
+
+.container {
+  max-width: 1024px;
+  padding-top: 15px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__info, .card__item {
+  width: 50%;
+}
+
+.card__info {
+  position: relative;
+  padding-top: 60px;
+}
+
+@import 'common/header';
+@import 'common/navigation';
+@import 'common/photo';
+@import 'common/card-info';
+@import 'common/share';

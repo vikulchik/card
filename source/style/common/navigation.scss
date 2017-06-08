@@ -1,0 +1,38 @@
+.navigation {
+  margin-bottom: 35px;
+  margin-top: 15px;
+}
+
+.navigation__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation__item {
+  list-style-type: none;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: '/';
+    top: -2px;
+    left: -7px;
+    color: black;
+  }
+
+  &:first-child:after {
+    display: none;
+  }
+}
+
+.navigation__link {
+  color: #f68237;
+  font-size: 12px;
+  margin-right: 10px;
+
+  &--active {
+    color: black;
+  }
+}
