@@ -1,0 +1,33 @@
+.about-us {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us__item {
+  width: 343px;
+  padding: 0 60px;
+  box-sizing: border-box;
+  text-align: center;
+  border-left: 1px solid #dedede;
+  
+  &:first-child {
+	border-left: none;
+  }
+}
+
+.about-us__title {
+  margin: 10px 20px;
+  font-size: 17px;
+  font-weight: normal;
+}
+
+.about-us__description {
+  font-size: 14px;
+  
+  a {
+	display: inline;
+	color: black;
+	text-decoration: underline;
+  }
+}

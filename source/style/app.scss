@@ -21,8 +21,12 @@ a {
   max-width: 1024px;
   padding-top: 15px;
   margin: auto;
+}
+
+.wrapper {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid #dedede;
 }
 
 .card__info, .card__item {
@@ -39,3 +43,7 @@ a {
 @import 'common/photo';
 @import 'common/card-info';
 @import 'common/share';
+@import 'common/product';
+@import 'common/list';
+@import 'common/about';
+@import 'common/footer';
